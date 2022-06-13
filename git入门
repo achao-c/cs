@@ -1,0 +1,36 @@
+1.vim hello.c
+在vim中 ：wq (write and quit)
+
+
+2. gcc hello.c 编译
+3../a.out 显示hello, world
+4.git init 
+
+
+5.git add hello.c 
+git add .
+分别暂存一个文件与当前目录下所有文件
+
+
+6.git config core.editor vim 把默认编辑器换成vim
+7.编辑说明文件 
+
+
+8.成功保存 ：wq (write and quit) 再 git commit 
+
+前一步也可以直接 git commit -m “内容” 快速提交
+
+9.git log 查看所有版本
+
+
+10.硬重置：git reset --hard 哈希值 会把后面的都清空
+可以采用分支：首先git branch 分支名 创建分支； 
+然后 git checkout 该分支 进入该分支
+git checkout命令加上-b参数表示创建并切换
+此时在该分支下修改的所有东西都在这个分支下。再git add； git commit在该分支下提交。
+此时我们使用git checkout 切换就可以发现不同分支下不同 。
+版本管理通过不同分支管理即可
+可以使用git merge 分支名对该分支与主分支合并，新手一般使用快速合并，即master主分支在新建分支修改代码之后，这样就不会发生冲突。（隐藏要求就是新分支回滚也要回滚到老分支之前）合并后把旧分支删除即可。
+
+
+具体看https://backlog.com/git-tutorial/cn/stepup/stepup1_1.html。
